@@ -8,12 +8,73 @@
 </head>
 <body>
   <header> <!-- site logo -->
-    <img src="#" alt="Angel Cosmetics Logo">
+    <img src="aclogo.png" alt="Angel Cosmetics Logo">
     <nav> <!-- navigation menu -->
       <a href="index.html">Home</a> 
       <a href="index.html">About</a>  
       <a href="index.html">FAQ</a>  
-      <a href="index.html">Cart</a>  
+      <a href="index.html">Cart</a>
+        <span aria-hidden="true">Cart Icon</span>
+        <span class="sr-only">Cart</span>  <!-- accessibility feature -->
+    </a>
     </nav>
   </header>
+
+  
+  <section class="first-section">
+    <img src="aclogo.png" alt="Angel Cosmetics Logo">
+
+    <div>
+      <h1>Natural. Handmade. Affordable.</h1>
+      <button>Shop Now</button>
+    </div>
+  </section>  
+  <section class="featured-products">
+    <h2>Featured Products</h2> <!-- second heading -->
+    
+    <!-- product images -->
+    <div class="product-img">
+      <article>
+        <img src="index.html" alt="Product image">
+        <button>Add to Cart</button>
+      </article>
+    </div>
+  </section>
+
+  <!--about -->
+  <section class="about">
+    <h2>Our Brand</h2>
+    <p>Our mission is to...be continued (:</p>
+  </section>
+
+  <!--faq-->
+  <section class="FAQ">
+    <h2> Frequently Asked Questions</h2>
+    <p><strong>Q:</strong> Do you offer free shipping?</p>
+    <p><strong>A:</strong> Yes! Free shipping on orders over $20.</p>
+  </section>
+
+  <!--subscribe-->
+  <section class="subscribe">
+    <h2>Join the glow up for 20% off!</h2>
+
+    <!-- email form-->
+    <form>
+        <label for="email" class="sr-only">Email address</label>
+        <input type="email" id="email" placeholder="Email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+<!-- footer -->
+    <footer>
+      <p>© 2025 Angel Cosmetics</p>
+
+  <!-- contact link-->
+      <a href="index.html">
+        <span aria-hidden="true">Email Icon</span>
+        <span class="sr-only">Contact Us</span>
+      </a>
+    </footer>
 </body>
+</html>
