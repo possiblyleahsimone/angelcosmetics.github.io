@@ -1,1 +1,13 @@
-
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffb3e8;
+  margin: 0;
+  text-align: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(to right, #fff5a5, #ffb3e8);
+}
