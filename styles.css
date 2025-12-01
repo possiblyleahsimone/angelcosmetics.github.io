@@ -23,3 +23,60 @@ nav a:hover {
   text-decoration: underline;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px:
+overflow: hidden;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: #ffb3e8;
+  text-align: center;
+}
+.first-section img {
+  max-width: 260px;
+  margin-bottom: 20px;
+}
+.first-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+first-section button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid #5a245a;
+  background-color: #ffe4fa;
+  cursor: pointer;
+}
+.featured-products {
+  padding: 40px 20px;
+  background-color: #ff9fe6;
+}
+.product-img article {
+  margin-top: 20px;
+}
+.product-img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+.about, .faq, .subscribe {
+  padding: 40px 20px;
+  background-color: #ffb3e8;
+}
+footer {
+  padding: 20px;
+  background-color: #ff8efdc;
+}
+  
+
