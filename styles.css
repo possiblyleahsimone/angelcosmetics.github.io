@@ -15,6 +15,7 @@ header {
 .logo img {
   max-height: 65px;
   width: auto;
+}
 nav a {
   margin-left: 15px;
   text-decoration: none;
