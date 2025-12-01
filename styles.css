@@ -117,5 +117,20 @@ footer {
   padding: 20px;
   background-color: #ff8efdc;
 }
+/* Button for homepage "View All Products" */
+.see-more-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #5a245a;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.see-more-btn:hover {
+  background-color: #ff9fe6;
+}
+
   
 
