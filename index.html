@@ -32,18 +32,34 @@
       <button>Shop Now</button>
     </div>
   </section>  
-  <section class="featured-products">
-    <h2>Featured Products</h2> <!-- second heading -->
-    
-    <!-- product images -->
-    <div class="product-img">
-      <article>
-        <img src="index.html" alt="Product image">
-        <button>Add to Cart</button>
-      </article>
-    </div>
-    <a href="products.html">Shop all products →</a>
-  </section>
+ <section class="featured-products" id="products-preview">
+  <h2>Featured Products</h2>
+
+  <div class="product-grid">
+    <article class="product-card">
+      <img src="bodybutter.png" alt="Angel Glow Body Butter">
+      <h3>Angel Glow Body Butter</h3>
+      <button onclick="window.location.href='products.html'">View More</button>
+    </article>
+
+    <article class="product-card">
+      <img src="lipgloss.png" alt="Heavenly Lip Gloss">
+      <h3>Heavenly Lip Gloss</h3>
+      <button onclick="window.location.href='products.html'">View More</button>
+    </article>
+
+    <article class="product-card">
+      <img src="facialspray.png" alt="Cloud Mist Face Spray">
+      <h3>Cloud Mist Face Spray</h3>
+      <button onclick="window.location.href='products.html'">View More</button>
+    </article>
+  </div>
+
+  <div style="margin-top: 20px;">
+    <a href="products.html" class="see-more-btn">View All Products →</a>
+  </div>
+</section>
+
 
   <!--about -->
   <section class="about" id="about">
