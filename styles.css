@@ -62,15 +62,6 @@ nav a:hover {
   background: #ff9fe6;
 }
 
-.products-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  margin: 0 auto
-  width: 100%;
-}
-
 .products {
   display: flex;
   flex-direction: column;
@@ -140,7 +131,7 @@ footer {
   padding: 20px;
   background-color: #ff8efdc;
 }
-  .about-page, .FAQ-page, .contact-page, .cart-page {
+  .about-page, .FAQ-page, .contact-page, .cart-page, .products-page {
   padding: 40px 20px;
   background-color: #ffb3e8;
   max-width: 800px;
