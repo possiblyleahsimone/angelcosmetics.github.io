@@ -9,9 +9,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 6px 24px;
   background: linear-gradient(to right, #fff5a5, #ffb3e8);
 }
+.logo img {
+  max-height: 40px;
+  width: auto;
 nav a {
   margin-left: 15px;
   text-decoration: none;
