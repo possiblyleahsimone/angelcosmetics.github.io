@@ -176,7 +176,15 @@ footer {
     font-weight: bold;
     cursor: pointer;
   }
-
+.subscribe form button.primary-btn {
+  border: 1px solid #5a245a;
+  background-color: #ffb3e8;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: #5a245a;
+  font-weight: bold
+  cursor: pointer;
+}
   .primary-btn:hover {
     background-color: #ff9fe6;
   }
