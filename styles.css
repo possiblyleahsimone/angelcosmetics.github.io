@@ -121,6 +121,24 @@ footer {
   padding: 20px;
   background-color: #ff8efdc;
 }
+  .about-page, .FAQ-page, .contact-page, .cart-page {
+  padding: 40px 20px;
+  background-color: #ffb3e8;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-page form > div {
+  margin-bottom: 12px;
+}
+
+.contact-page input,
+.contact-page textarea {
+  width: 100%;
+  max-width: 400px;
+}
+
 
 .see-more-btn {
   display: inline-block;
