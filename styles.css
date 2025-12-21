@@ -201,6 +201,29 @@ footer {
   margin-bottom: 8px;
 }
 
+.cart-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.cart-table th {
+  font-weight: bold;
+}
+
+.cart-table td[colspan] {
+  text-align: center;
+  padding: 20px;
+}
+
+
     
   
 
