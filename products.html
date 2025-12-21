@@ -33,35 +33,45 @@
         <img src="bodybutter.png" alt="Angel Glow Body Butter in glass jar with pink logo">
         <p> Angel Glow Body Butter</p>
         <p>$18.00</p>
-        <button>Add to Cart</button>
+        <button onclick="addToCart('Angel Glow Body Butter', 18)">
+          Add to Cart
+        </button>
       </article>
 
       <article class="product-card">
         <img src="lipgloss.png" alt="Pink Heavenly Lip Gloss in a clear tube with gold cap">
         <p> Heavenly Lip Gloss</p>
         <p>$12.00</p>
-        <button>Add to Cart</button>
+        <button onclick="addToCart('Pink Heavenly Lip Gloss', 12)">
+          Add to Cart
+        </button>
       </article>
 
       <article class="product-card">
         <img src="facialspray.png" alt="Blue Cloud Mist Face Spray bottle with silver cap">
         <p> Cloud Mist Face Spray</p>
         <p>$15.00</p>
-        <button>Add to Cart</button>
+        <button onclick="addToCart('Cloud Mist Face Spray', 15)">
+          Add to Cart
+        </button>
       </article>
 
       <article class="product-card">
         <img src="facialoil.png" alt="Seraphic Facial Oil dropper bottle with gold cap">
         <p> Seraphic Facial Oil</p>
         <p>$22.00</p>
-        <button>Add to Cart</button>
+        <button onclick="addToCart('Seraphic Facial Oil', 22)">
+          Add to Cart
+        </button>
       </article>
 
       <article class="product-card">
         <img src="highlighter.png" alt="Shimmer Star Dew Highlight Balm in black container with black lid ">
         <p> Star Dew Highlight Balm</p>
         <p>$14.00</p>
-        <button>Add to Cart</button>
+        <button onclick="addToCart('Star Dew Highlight Balm', 14)">
+          Add to Cart
+        </button>
       </article>
 
     </div>
@@ -70,6 +80,22 @@
   <footer>
     <p>© 2025 Angel Cosmetics</p>
   </footer>
+<script>
+  function addToCart(name, price) {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    const existingItem = cart.find(item => item.name === name);
+
+    if (existingItem) {
+      existingItem.quantity += 1;
+    } else {
+      cart.push({ name, price, quantity: 1 });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(`${name} added to cart!`);
+  }
+</script>
 
 </body>
 </html>
