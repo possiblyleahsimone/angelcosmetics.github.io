@@ -51,10 +51,12 @@
   <footer>
     <p>© 2025 Angel Cosmetics</p>
   </footer>
-<script>
+  <script>
   document.addEventListener("DOMContentLoaded", function () {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     const cartItems = document.getElementById("cart-items");
+
+    if (!cartItems) return;
 
     if (cart.length === 0) {
       cartItems.innerHTML = `
@@ -71,7 +73,15 @@
 
         row.innerHTML = `
           <td>${item.name}</td>
-          <td>$${item.price
+          <td>$${item.price.toFixed(2)}</td>
+          <td>${item.quantity}</td>
+          <td>$${total.toFixed(2)}</td>
+        `;
 
+        cartItems.appendChild(row);
+      });
+    }
+  });
+</script>
 </body>
 </html>
