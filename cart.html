@@ -51,7 +51,45 @@
   <footer>
     <p>© 2025 Angel Cosmetics</p>
   </footer>
-  
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cartItems = document.getElementById("cart-items");
+    const clearCartBtn = document.querySelector(".clear-cart-btn");
+
+    if (!cartItems) return;
+
+    if (cart.length === 0) {
+      cartItems.innerHTML = `
+        <tr>
+          <td colspan="4">Your cart is currently empty.</td>
+        </tr>
+      `;
+    } else {
+      cartItems.innerHTML = "";
+
+      cart.forEach(item => {
+        const total = item.price * item.quantity;
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+          <td>${item.name}</td>
+          <td>$${item.price.toFixed(2)}</td>
+          <td>${item.quantity}</td>
+          <td>$${total.toFixed(2)}</td>
+        `;
+
+        cartItems.appendChild(row);
+      });
+    }
+
+    if (clearCartBtn) {
+      clearCartBtn.addEventListener("click", function () {
+        localStorage.removeItem("cart");
+        location.reload();
+      });
+    }
+  });
 </script>
 </body>
 </html>
