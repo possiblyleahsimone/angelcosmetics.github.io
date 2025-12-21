@@ -188,6 +188,18 @@ footer {
   .primary-btn:hover {
     background-color: #ff9fe6;
   }
+.faq ul {
+    padding-left: 30px;
+}
+
+.faq li {
+  margin-bottom: 25px;
+}
+.faq li strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
     
   
 
