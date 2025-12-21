@@ -222,6 +222,16 @@ footer {
   text-align: center;
   padding: 20px;
 }
+.cart-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.cart-actions .primary-btn {
+  min-width: 180px;
+  text-align: center;
+}
+
 
 
     
