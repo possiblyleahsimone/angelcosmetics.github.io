@@ -131,7 +131,8 @@ nav a:hover {
 }
 footer {
   padding: 20px;
-  background-color: #ff8efd;
+  background-color: #ffb3e8;
+  text-align: center;
 }
   .about-page, .FAQ-page, .contact-page, .cart-page, .products-page {
   padding: 40px 20px;
