@@ -189,6 +189,8 @@ footer {
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
   }
 
 .subscribe form button.primary-btn {
