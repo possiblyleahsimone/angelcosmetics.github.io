@@ -153,6 +153,14 @@ footer {
 footer p {
   margin: 0;
 }
+.footer-row {
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-row .social-links {
+  width: auto;
+}
 
   .about-page, .FAQ-page, .contact-page, .cart-page, .products-page {
   padding: 40px 20px;
