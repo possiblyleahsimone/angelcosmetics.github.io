@@ -29,7 +29,7 @@
     <h1>Contact Us</h1>
     <p>If you have questions about your order, you can send us a message using the form below.</p>
 
-    <form>
+    <form id="contact-form">
       <div>
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required>
@@ -46,12 +46,29 @@
       </div>
 
       <button type="submit" class="primary-btn">Send Message</button>
+      <p id="success-message" style="display: none;">
+        Thanks for contacting us! Your message has been sent <3
+      </p>
     </form>
   </section>
-
+  
   <footer>
     <p>© 2025 Angel Cosmetics</p>
   </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const successMessage = document.getElementById("success-message");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      form.reset(); 
+      successMessage.style.display = "block";
+    });
+  });
+</script>
 
 </body>
 </html>
