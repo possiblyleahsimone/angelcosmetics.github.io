@@ -26,7 +26,7 @@ nav a {
   text-decoration: none;
   color: #5a245a;
   font-weight: bold;
-  font-size: 18px
+  font-size: 18px;
 }
 
 nav a:hover {
@@ -273,7 +273,7 @@ footer {
 .social-links a svg {
   width: 24px;
   height: 24px;
-  fill; #5a245a;
+  fill: #5a245a;
   display: block;
   transition: opacity 0.2s ease;
 }
