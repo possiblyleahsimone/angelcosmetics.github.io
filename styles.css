@@ -271,8 +271,11 @@ footer {
 }
 
 .social-links a svg {
-  fill: #5a245a;
-  transition: opacity 0.2 ease;
+  width: 24px;
+  height: 24px;
+  fill; #5a245a;
+  display: block;
+  transition: opacity 0.2s ease;
 }
 
 .social-links a:hover svg {
